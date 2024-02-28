@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part 2</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+    <div id='root'>
+        <!-- Nav section -->
+        <nav id='nav-bar'>
+            <div id='logo'>
+            </div>
+            <div class='flex gap-4 text-xl'>
+                <h2>Home</h2>
+                <h2>Profile</h2>
+                <h2>About</h2>
+            </div>
+        </nav>
+
+        <!-- Text section -->
+        <section class="w-full h-screen flex justify-center items-center relative">
+            <div>
+                <h1 id="funny"
+                    class='text-[#fde68a] text-7xl font-extrabold animate__animated absolute top-[40%] left-[6%]'>
+                    Funny Website
+                </h1>
+                <h1 id="interesting" class='text-[#bbf7d0] text-7xl animate__animated absolute top-[40%] left-[45%]'>
+                    Interesting...
+                </h1>
+            </div>
+
+            <div>
+                <h1 id="twisted"
+                    class='text-[#d9f99d] text-8xl rotate-180 animate__animated absolute top-[28%] left-[30%]'>
+                    Twisted</h1>
+                <h1 class='text-[#dde3eb] text-9xl animate-pulse -rotate-90 absolute top-[35%] left-[40%]'>Wicked</h1>
+            </div>
+            <button id="joke"
+                class='bg-[#fef3c7] text-3xl animate__animated rounded font-bold p-7 absolute top-[52%] left-[76%]'>
+                Tell me a joke</button>
+        </section>
+
+        <!-- Cards section -->
+        <section id='card-section' class="w-full h-screen">
+            <div class="flex flex-wrap w-[80%] mx-auto gap-4 grid-rows-4">
+                <div id='img-1' class="w-64 h-96 rounded animate__animated card"></div>
+                <div id='img-2' class="w-64 h-96 rounded animate__animated card"></div>
+                <div id='img-3' class="w-64 h-96 rounded animate__animated card"></div>
+                <div id='img-4' class="w-64 h-96 rounded animate__animated card"></div>
+                <div id='img-5' class="w-64 h-96 rounded animate__animated card"></div>
+                <div id='img-6' class="w-64 h-96 rounded animate__animated card"></div>
+                <div id='img-7' class="w-64 h-96 rounded animate__animated card"></div>
+                <div id='img-8' class="w-64 h-96 rounded animate__animated card"></div>
+            </div>
+        </section>
+
+        <!-- Joke section -->
+        <section id='joke-section'>
+
+        </section>
+        <script src="script.js"></script>
+    </div>
+
+    <script>
+        VANTA.NET({
+            el: '#root',
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            scale: 1.5,
+            minHeight: 1900,
+            scaleMobile: 1.00,
+            color: 0xffffff,
+            backgroundColor: 0x1e1a25,
+            maxDistance: 26.00,
+            showDots: false
+        })
+    </script>
+</body>
+
+</html>

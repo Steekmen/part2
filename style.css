@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+#root {
+    min-height: 100vh;
+}
+
+#nav-bar {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    color: #fff;
+}
+
+#logo {
+    width: 60px;
+    height: 60px;
+    background-image: url(logo.webp);
+    background-size: cover;
+}
+
+#img-1 {
+    background-image: url(/cards/1.jpg);
+    background-size: cover;
+}
+
+#img-2 {
+    background-image: url(/cards/2.jpg);
+    background-size: cover;
+}
+
+#img-3 {
+    background-image: url(/cards/3.jpg);
+    background-size: cover;
+}
+
+#img-4 {
+    background-image: url(/cards/4.webp);
+    background-size: cover;
+}
+
+#img-5 {
+    background-image: url(/cards/5.webp);
+    background-size: cover;
+}
+
+#img-6 {
+    background-image: url(/cards/6.jpg);
+    background-size: cover;
+}
+
+#img-7 {
+    background-image: url(/cards/7.jpg);
+    background-size: cover;
+}
+
+#img-8 {
+    background-image: url(/cards/8.jpg);
+    background-size: cover;
+}
+
+#card-section {
+    min-height: 100vh;
+    display: flex;
+
+}
+
+#joke-section {
+    min-height: 100vh;
+}
